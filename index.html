@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Motion AI</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link
+rel="manifest"
+href="manifest.json">
+
+<link
+rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+🎬 Motion AI
+</h1>
+
+<textarea
+id="prompt"
+placeholder="Describe your video...">
+</textarea>
+
+<select id="style">
+
+<option>Cinematic</option>
+<option>Anime</option>
+<option>Fantasy</option>
+<option>Cyberpunk</option>
+<option>Realistic</option>
+<option>Nature</option>
+
+</select>
+
+<button id="generateBtn">
+
+Generate Prompt
+
+</button>
+
+<div id="loader">
+
+Generating...
+
+</div>
+
+<textarea
+id="result"
+readonly>
+</textarea>
+
+<button id="copyBtn">
+
+Copy Prompt
+
+</button>
+
+</div>
+
+<script
+type="module"
+src="app.js">
+</script>
+
+</body>
+</html>
